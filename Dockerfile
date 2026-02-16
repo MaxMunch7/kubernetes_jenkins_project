@@ -9,5 +9,5 @@ RUN unzip rehabilitation-yoga.zip
 RUN cp -rvf rehabilitation-yoga/* .
 RUN rm -rf rehabilitation-yoga rehabilitation-yoga.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
-expose 80
+expose 80 443
 
