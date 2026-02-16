@@ -1,4 +1,4 @@
-FROM centos:7
+FROM httpd:latest
 MAINTAINER maxmunch725@gmail.com
 RUN yum install -y httpd\
  zip\
