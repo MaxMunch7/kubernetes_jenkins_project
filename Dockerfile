@@ -8,7 +8,7 @@ RUN cp -rvf rehabilitation-yoga/* .
 RUN rm -rf rehabilitation-yoga rehabilitation-yoga.zip
 CMD ["apache2ctl", "-D", "FOREGROUND"]
 #CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
-expose 80 443
+EXPOSE 80 443
 
 
 
