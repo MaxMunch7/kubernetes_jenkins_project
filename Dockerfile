@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-MAINTAINER maxmunch725@gmail.com
 RUN apt update && apt install -y apache2 zip unzip
 ADD https://templatemo.com/download/templatemo_610_aurum_gold/templatemo_610_aurum_gold.zip /var/www/html/
 WORKDIR /var/www/html/
