@@ -5,8 +5,8 @@ WORKDIR /var/www/html/
 RUN unzip templatemo_610_aurum_gold.zip
 RUN cp -rvf templatemo_610_aurum_gold/* .
 RUN rm -rf templatemo_610_aurum_gold templatemo_610_aurum_gold.zip
-#CMD ["apache2ctl", "-D", "FOREGROUND"]
-CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+#CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80 443
 
 
