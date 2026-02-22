@@ -1,0 +1,21 @@
+---
+kind: Deployment
+apiversion: apps/v1
+metadata:
+  name: webapp
+spec:
+  replicas: 2
+selectors:
+  matchLabels:
+    app: webapp
+  template:
+    metadata: 
+  labels: 
+  app: webapp
+  spec:
+    containers:
+      - name: webapp
+        image: maxmunch/myproject
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80
